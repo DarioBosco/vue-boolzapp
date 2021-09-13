@@ -14,22 +14,29 @@
 			<div id="app" class="container">
 				<div class="container-left">
 					<div class="header">
-						<div class="profile-img">
-							<img src="" alt="" />
-						</div>
-					</div>
-					<div class="banner">
 						<div class="avatar">
-							<img src="" alt="" />
+							<img src="./src/img/avatar_io.jpg" alt="" />
 						</div>
 					</div>
+					<div class="banner"></div>
 					<div class="search"></div>
-					<div class="chats"></div>
+					<div class="chats">
+						<ul>
+							<li v-for="(contact, index) in contacts">
+								<div class="avatar">
+									<img :src="'./src/img/avatar' + contact.avatar + '.jpg'" alt="" />
+								</div>
+								<div class="details">
+									<div class="name">{{contact.name}}</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="container-right">
 					<div class="header"></div>
 					<div class="current-chat"></div>
-					<div class="message"></div>
+					<div class="message-box"></div>
 				</div>
 			</div>
 		</div>
