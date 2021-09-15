@@ -128,6 +128,8 @@ ul {
 	height: calc(100% - 180px);
 	overflow-y: scroll;
 	background-image: url(../img/mine.jpg);
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .message-container {
@@ -153,7 +155,7 @@ ul {
 }
 
 .message {
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .sent {
