@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- CSS -->
 		<link rel="stylesheet" href="./src/css/style.css" />
 
 		<title>Boolzapp</title>
@@ -14,8 +17,16 @@
 			<div id="app" class="container">
 				<div class="container-left">
 					<div class="header">
-						<div class="avatar">
-							<img src="./src/img/avatar_io.jpg" alt="" />
+						<div class="avatar header-avatar">
+							<img :src="'./src/img/avatar' + user.avatar + '.jpg'" alt="" />
+							<div class="details">
+								<div class="name">{{user.name}}</div>
+							</div>
+						</div>
+						<div class="buttons">
+							<i class="fas fa-circle-notch"></i>
+							<i class="fas fa-comment-alt"></i>
+							<i class="fas fa-ellipsis-v"></i>
 						</div>
 					</div>
 					<div class="banner"></div>
@@ -34,7 +45,19 @@
 					</div>
 				</div>
 				<div class="container-right">
-					<div class="header"></div>
+					<div class="header">
+						<div class="avatar header-avatar">
+							<img :src="'./src/img/avatar' + user.avatar + '.jpg'" alt="" />
+							<div class="details">
+								<div class="name">{{user.name}}</div>
+							</div>
+						</div>
+						<div class="buttons">
+							<i class="fas fa-search"></i>
+							<i class="fas fa-paperclip"></i>
+							<i class="fas fa-ellipsis-v"></i>
+						</div>
+					</div>
 					<div class="current-chat"></div>
 					<div class="message-box"></div>
 				</div>

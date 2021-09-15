@@ -11,6 +11,10 @@ Vue.config.devtools = true;
 const app = new Vue({
 	el: '#app',
 	data: {
+		user: {
+			name: 'User Name',
+			avatar: '_io',
+		},
 		contacts: [
 			{
 				name: 'Michele',
@@ -96,10 +100,10 @@ const app = new Vue({
 				],
 			},
 		],
-		methods: {
-			test(index) {
-				console.log(index);
-			},
+	},
+	methods: {
+		test(index) {
+			console.log(index);
 		},
 	},
 });

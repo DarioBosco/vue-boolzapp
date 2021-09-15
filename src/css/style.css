@@ -42,9 +42,27 @@ body {
 
 .header {
 	height: 100px;
+	width: 100%;
 	background-color: #eaeaea;
 	border-left: 1px solid #e0e0e0;
 	border-right: 1px solid #e0e0e0;
+}
+
+.buttons {
+	height: 100%;
+	width: 20%;
+	float: right;
+	font-size: 1.7rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 25px;
+}
+
+.buttons i {
+	margin-left: 25px;
+	color: rgba(0, 0, 0, 0.233);
+	cursor: pointer;
 }
 
 .banner {
@@ -75,10 +93,6 @@ body {
 .chats .details {
 	float: left;
 }
-.chats .details .name {
-	padding: 10px 0 0 20px;
-	font-size: 1.2rem;
-}
 
 .current-chat {
 	height: calc(100% - 180px);
@@ -104,4 +118,14 @@ body {
 	aspect-ratio: 1;
 	border-radius: 50%;
 }
+
+.header-avatar img {
+	height: 65%;
+}
+
+.details .name {
+	padding-left: 10px;
+	font-size: 1.2rem;
+}
+
 /* End of main structure */
