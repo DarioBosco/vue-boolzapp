@@ -96,6 +96,10 @@ const app = new Vue({
 				],
 			},
 		],
-		methods: {},
+		methods: {
+			test(index) {
+				console.log('test');
+			},
+		},
 	},
 });
