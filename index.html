@@ -47,9 +47,9 @@
 				<div class="container-right">
 					<div class="header">
 						<div class="avatar header-avatar">
-							<img :src="'./src/img/avatar' + user.avatar + '.jpg'" alt="" />
+							<img :src="'./src/img/avatar' + contacts[selectedUser].avatar + '.jpg'" alt="" />
 							<div class="details">
-								<div class="name">{{user.name}}</div>
+								<div class="name">{{contacts[selectedUser].name}}</div>
 							</div>
 						</div>
 						<div class="buttons">

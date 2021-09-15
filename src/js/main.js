@@ -11,6 +11,7 @@ Vue.config.devtools = true;
 const app = new Vue({
 	el: '#app',
 	data: {
+		selectedUser: 0,
 		user: {
 			name: 'User Name',
 			avatar: '_io',
@@ -103,7 +104,9 @@ const app = new Vue({
 	},
 	methods: {
 		test(index) {
-			console.log(index);
+			this.selectedUser = index;
+			console.log(this.selectedUser);
+			console.log(this.contacts[this.selectedUser].name);
 		},
 	},
 });
