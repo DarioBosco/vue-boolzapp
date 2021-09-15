@@ -214,6 +214,11 @@ ul {
 	font-size: 1.2rem;
 }
 
+.additional-info {
+	height: 100%;
+	width: 100%;
+}
+
 .banner-icon {
 	margin-left: 25px;
 	display: flex;
@@ -237,4 +242,5 @@ ul {
 	margin-top: 5px;
 	color: grey;
 }
+
 /* End of main structure */
