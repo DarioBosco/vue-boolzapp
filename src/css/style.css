@@ -12,6 +12,10 @@ body {
 ul {
 	list-style: none;
 }
+
+.active {
+	background-color: rgba(0, 0, 0, 0.144);
+}
 /* Main structure */
 .wrapper {
 	width: 100%;

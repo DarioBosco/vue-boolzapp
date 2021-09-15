@@ -44,7 +44,7 @@
 					</div>
 					<div class="chats">
 						<ul>
-							<li v-for="(contact, index) in contacts" @click="getSelectedUser(index)">
+							<li v-for="(contact, index) in contacts" @click="getSelectedUser(index)" :class="(index == selectedUser) ? 'active' : null">
 								<div class="avatar">
 									<img :src="'./src/img/avatar' + contact.avatar + '.jpg'" alt="" />
 								</div>
@@ -70,13 +70,6 @@
 						</div>
 					</div>
 					<div class="current-chat">
-						<!-- <div class="message-container">
-							<div class="message received">Messaggio di prova</div>
-						</div>
-
-						<div class="message-container">
-							<div class="message sent">Messaggio di prova piu lungo ancora</div>
-						</div> -->
 						<ul>
 							<li class="message-container" v-for="message in contacts[selectedUser].messages">
 								<div class="message" :class="message.status">
@@ -88,13 +81,14 @@
 					</div>
 					<div class="message-box">
 						<i class="far fa-smile"></i>
-						<input type="text" id="messageBox" name="messageBox" placeholder="Scrivi un messaggio" />
+						<input type="text" id="messageBox" name="messageBox" placeholder="Scrivi un messaggio" v-model="userMessage" @keyup.Enter="sendMessage" />
 						<i class="fas fa-microphone"></i>
 					</div>
 				</div>
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 		<script src="./src/js/main.js"></script>
 	</body>
 </html>
