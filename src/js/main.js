@@ -103,10 +103,8 @@ const app = new Vue({
 		],
 	},
 	methods: {
-		test(index) {
+		getSelectedUser(index) {
 			this.selectedUser = index;
-			console.log(this.selectedUser);
-			console.log(this.contacts[this.selectedUser].name);
 		},
 	},
 });
