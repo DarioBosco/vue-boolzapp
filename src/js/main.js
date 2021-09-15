@@ -98,7 +98,7 @@ const app = new Vue({
 		],
 		methods: {
 			test(index) {
-				console.log('test');
+				console.log(index);
 			},
 		},
 	},
