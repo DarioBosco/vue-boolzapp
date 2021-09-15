@@ -70,13 +70,21 @@
 						</div>
 					</div>
 					<div class="current-chat">
-						<div class="message-container">
+						<!-- <div class="message-container">
 							<div class="message received">Messaggio di prova</div>
 						</div>
 
 						<div class="message-container">
 							<div class="message sent">Messaggio di prova piu lungo ancora</div>
-						</div>
+						</div> -->
+						<ul>
+							<li class="message-container" v-for="message in contacts[selectedUser].messages">
+								<div class="message" :class="message.status">
+									{{message.message}}
+									<div class="date">{{message.date}}</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 					<div class="message-box">
 						<i class="far fa-smile"></i>
