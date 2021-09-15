@@ -127,6 +127,29 @@ body {
 	background-image: url(../img/mine.jpg);
 }
 
+.message-container {
+	width: 100%;
+	height: 80px;
+	padding: 25px 25px;
+}
+
+.current-chat .message {
+	min-width: 200px;
+	max-width: 500px;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.sent {
+	float: right;
+	background-color: white;
+}
+
+.received {
+	float: left;
+	background-color: lightgreen;
+}
+
 .message-box {
 	height: 80px;
 	background-color: #f3eeea;
