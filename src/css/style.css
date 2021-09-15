@@ -209,15 +209,15 @@ ul {
 	height: 65%;
 }
 
-.details .name {
-	padding-left: 10px;
+.chats .details .name {
+	margin: 10px 0 0 10px;
 	font-size: 1.2rem;
 }
 
-/* .additional-info {
-	height: 100%;
-	width: 100%;
-} */
+.header .details .name {
+	margin: 0 0 0 10px;
+	font-size: 1.2rem;
+}
 
 .banner-icon {
 	margin-left: 25px;
