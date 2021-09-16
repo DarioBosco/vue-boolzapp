@@ -143,9 +143,10 @@ const app = new Vue({
 			}, 1000);
 		},
 		userLookup() {
-			return this.contacts.filter((contact) => {
+			let filteredChats = this.contacts.filter((contact) => {
 				return contact.name.toLowerCase().includes(this.userLookupText.toLowerCase());
 			});
+			return filteredChats;
 		},
 	},
 });
