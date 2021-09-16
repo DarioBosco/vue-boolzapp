@@ -160,12 +160,12 @@ ul {
 
 .sent {
 	float: right;
-	background-color: white;
+	background-color: lightgreen;
 }
 
 .received {
 	float: left;
-	background-color: lightgreen;
+	background-color: white;
 }
 
 .message-box {
